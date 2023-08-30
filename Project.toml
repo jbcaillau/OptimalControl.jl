@@ -9,6 +9,8 @@ CTDirect = "790bbbee-bee9-49ee-8912-a9de031322d5"
 CTFlows = "1c39547c-7794-42f7-af83-d98194f657c2"
 CTProblems = "45d9ea3f-a92f-411f-833f-222dd4fb9cd8"
 DocStringExtensions = "ffbed154-4ef7-542d-bbb7-c09d3a79fcae"
+Documenter = "e30172f5-a6a5-5a46-863b-614d45cd2de4"
+Example = "7876af07-990d-54b4-ab0e-23690620f79a"
 
 [compat]
 CTBase = "0.7"
