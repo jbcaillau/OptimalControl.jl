@@ -1,7 +1,6 @@
 # [Double integrator: time minimisation 2](@id DIT2)
 
-The time minimisation double integrator problem consists in minimising the free final time $t_f$
-associated with the constraints
+The problem consists in minimising the final time $t_f$ for the double integrator system
 
 ```math
     \dot x_1(t) = x_2(t), \quad \dot x_2(t) = u(t), \quad u(t) \in [-1,1],
@@ -11,6 +10,13 @@ and the limit conditions
 
 ```math
     x(0) = (1,2), \quad x(t_f) = (0,0)
+```
+
+This problem can be interpretated as a simple model for a wagon with constant mass moving along
+a line without fricton.
+
+```@raw html
+<img src="./assets/chariot.png" style="display: block; margin: 0 auto 20px auto;" width="300px">
 ```
 
 First, we need to import the `OptimalControl.jl` package:
@@ -42,7 +48,9 @@ Then, we can define the problem
 end
 nothing # hide
 ```
-Note that in order to ensure convergence of the direct solver, we have added the state constraints labelled (1) and (2):
+!!! note "Nota bene"
+
+    In order to ensure convergence of the direct solver, we have added the state constraints labelled (1) and (2):
 
 ```math
 0 \leq q(t) \leq 5,\quad -2 \leq v(t) \leq 3,\quad t \in [ 0, tf ].
