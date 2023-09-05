@@ -4,7 +4,7 @@ The time minimisation double integrator problem consists in minimising the free 
 associated with the constraints
 
 ```math
-    \dot x_1(t) = x_2(t), \quad \dot x_2(t) = u(t), \quad u(t) \in [-1,1], \quad x_1(t) \in [0,5], \quad x_2(t) \in [-2,3]
+    \dot x_1(t) = x_2(t), \quad \dot x_2(t) = u(t), \quad u(t) \in [-1,1],
 ```
 
 and the limit conditions
